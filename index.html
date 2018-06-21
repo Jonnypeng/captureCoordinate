@@ -20,9 +20,23 @@
   </style>
 </head>
 <body>
+  <div class="modal fade" id="codeView" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">代码片段</h4>
+            </div>
+            <div class="modal-body" id="code"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
   <input id="selectImage" type="file" accept="image/*" style="display:none">
   <canvas id="canvas"></canvas>
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="js/pixi.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/captureCoordinate.js"></script>
